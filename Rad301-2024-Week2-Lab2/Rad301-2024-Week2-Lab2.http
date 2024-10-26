@@ -10,6 +10,7 @@ Content-Type: application/json
 {
     "description": "an ad",
     "price": 10.00,
+    "type": "Paid",
     "sellerId":"1",
     "categoryId":"1"
 }
@@ -37,8 +38,9 @@ Content-Type: application/json
 {
     "description": "en edited ad",
     "price": 15.00,
+    "type": "Free",
     "sellerId":"1",
-    "categoryId":"1"
+    "categoryId":"2"
 }
 ###
 
@@ -51,5 +53,13 @@ GET {{Rad301-2024-Week2-Lab2_HostAddress}}/ads/sellers/collection/1
 ###
 
 GET {{Rad301-2024-Week2-Lab2_HostAddress}}/ads/categories/collection/1
+
+###
+
+GET {{Rad301-2024-Week2-Lab2_HostAddress}}/ads/categories/1
+
+###
+
+GET {{Rad301-2024-Week2-Lab2_HostAddress}}/ads/sellers/1
 
 ###

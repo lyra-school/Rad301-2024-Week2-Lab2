@@ -86,6 +86,7 @@ ads.MapPut("/{id}", async (int id, Ad ad, AdDb db) =>
 
     foundAd.Description = ad.Description;
     foundAd.Price = ad.Price;
+    foundAd.Type = ad.Type;
     foundAd.SellerId = ad.SellerId;
     foundAd.CategoryId = ad.CategoryId;
 
